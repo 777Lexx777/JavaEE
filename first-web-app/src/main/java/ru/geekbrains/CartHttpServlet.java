@@ -12,7 +12,7 @@ public class CartHttpServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.getWriter().println("Карзина!!!");
+        resp.getWriter().println("|Карзина|");
 
         req.setAttribute("attr", "value");
         getServletContext().getRequestDispatcher("/catalog-http-servlet").include(req, resp);

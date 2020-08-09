@@ -10,6 +10,7 @@ import java.io.IOException;
 @WebServlet (name = "CatalogHttpServlet",urlPatterns = "/catalog-http-servlet")
 public class CatalogHttpServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setCharacterEncoding("utf-8");

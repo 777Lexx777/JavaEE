@@ -10,6 +10,7 @@ import java.io.IOException;
 @WebServlet (name = "ProductHttpServlet",urlPatterns = "/product-http-servlet")
 public class ProductHttpServlet extends HttpServlet {
 
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.getWriter().println("|Оформление заказа|");
